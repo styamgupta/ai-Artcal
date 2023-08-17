@@ -3,11 +3,6 @@ import adddata from "@/models/adddata"
 const handler = async (req, res) => {
     const query1 = req.query.q
     const query = query1.toString()
-    ; // Assuming req.query contains the query parameters
-
-    // const queryString = JSON.stringify(query);
-
-    
     const getdatas = await adddata.aggregate([
       {
         $match: {
