@@ -75,11 +75,11 @@ const today = ({ data }) => {
                 return <div key={data[key]._id}>
                     <section className="text-gray-600 body-font">
                         <div className="container px-5 py-10 mx-auto">
-                            <div className="flex flex-wrap -m-2">
+                            <div className=" -wrap -m-2">
 
                                 <div className={`p-2 lg:w-1/3 ${data[key].state == "aavak" ? "lg:w-1/3 text-green-300 border-solid border-8 border-green-600" : "ml-auto text-red-300 border-solid border-8 border-red-600"} md:w-1/2 w-full`}>
-                                    <div className="my-2 h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                                        {id == data[key]._id ? <div className="flex-grow">
+                                    <div className="my-2 h-full  items-center border-gray-200 border p-4 rounded-lg">
+                                        {id == data[key]._id ? <div className="-grow">
                                             <h1><input type="text" name="totalprice" onChange={handleOnchange} value={totalprice} /></h1>
                                             <h2 className="text-gray-900 title-font font-medium">
                                                 <select name="gallname" onChange={handleOnchange} value={gallname} className="w-30 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-red-500 focus:bg-white focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -92,19 +92,19 @@ const today = ({ data }) => {
                                                 </select>
                                             </h2>
                                             <p className="text-gray-500"><input type="text" name="kitnakg" onChange={handleOnchange} value={kitnakg} /></p>
-                                            <div className="flex justify-between">
+                                            <div className=" justify-between -row">
                                                 <button onClick={() => { updatedata(id, totalprice, gallname, kitnakg) }}>update</button>
                                             </div>
                                         </div>
                                             :
-                                            <div className="flex-grow">
+                                            <div className="-grow">
                                                 {new Date(data[key].createdAt).toGMTString() == "Invalid Date" ? "" : <p className="text-gray-500">{new Date(data[key].createdAt).toGMTString()}</p>}
                                                 {new Date(data[key].updatedAt).toGMTString() == "Invalid Date" ? "" : <p className="text-gray-500">{new Date(data[key].updatedAt).toGMTString()}</p>}
                                                 <h1>{data[key].totalprice}</h1>
 
                                                 <h2 className="text-gray-900 title-font font-medium">{data[key].gallname}</h2>
                                                 <p className="text-gray-500">{data[key].kitnakg}</p>
-                                                <div className="flex justify-between">
+                                                <div className=" justify-between">
                                                     <button onClick={() => { deletedata(data[key]._id) }}>delete</button>
                                                     <button onClick={() => { editdata(data[key]) }}>Edit</button>
                                                 </div>
