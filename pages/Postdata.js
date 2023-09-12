@@ -10,7 +10,8 @@ const Postdata = ({ data }) => {
         <meta name="description" content="Explore a world of knowledge and inspiration on our blog. Dive into a wide range of topics, including stories, trenidng,posts, other, and more. Discover expert insights, tips, and captivating stories that will keep you coming back for more" />
         <meta name="keywords" content="blog , trending,posts , stories, hindi mai blogs ,easy understand ,how to ,and many more" />
       </Head>
-    <section className="text-gray-600 body-font">
+    
+      {!data.length==0?<section className="text-gray-600 body-font">
       <div className="container px-3 md:py-20 mx-auto">
         <div className="flex flex-wrap -m-4">
           {Object.keys(data).map((k) => {
@@ -19,7 +20,7 @@ const Postdata = ({ data }) => {
         </div>
       </div>
 
-    </section>
+    </section>:<div className="flex mt-40 justify-center content-center">  सर्वर डेटा प्राप्त करने में असमर्थ है</div>}
   </>
 
   )

@@ -37,7 +37,7 @@ const Navbar = ({ data, datas}) => {
             })}
           </div>
         </div>
-      </section > : null}
+      </section > : <div className="flex mt-40 justify-center content-center">  सर्वर डेटा प्राप्त करने में असमर्थ है</div>}
       <br className="m-3 p-2"></br>
 
     </>

@@ -9,7 +9,7 @@ const Other = ({data}) => {
   return (
     <>
     <Head>
-        <title>ai-Artical/ohter</title>
+        <title>ai-Artical/other</title>
         <meta name="description" content="Explore a world of knowledge and inspiration on our blog. Dive into a wide range of topics, including stories, trenidng,posts, other, and more. Discover expert insights, tips, and captivating stories that will keep you coming back for more" />
         <meta name="keywords" content="blog , trending,posts , stories, hindi mai blogs ,easy understand ,how to ,and many more" />
       </Head>
