@@ -14,7 +14,7 @@ const MainPage = (props) => {
                         </div>
                     </div>
                     <div className=" bg-slate-300 shadow-sm">
-                        <h2 className=" p-3 tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{date}</h2>
+                        {/* <h2 className=" p-3 tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{date}</h2> */}
                         <h1 className=" p-3 title-font text-lg font-medium text-gray-900 mb-3">{title}</h1>
                         <p className=" p-3 leading-relaxed mb-3">{description}...</p>
                         <div className="flex items-center flex-wrap ">

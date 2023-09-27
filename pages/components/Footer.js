@@ -11,7 +11,7 @@ const Footer = () => {
                 </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                     <div className="mr-5 hover:text-red-900 transition duration-300">
-                        <Link href={"/"}>Home</Link>
+                        <Link href={"/"}>hello</Link>
                     </div>
                     <div className="mr-5 hover:text-red-900 transition duration-300">
                         <Link href={"/Postdata"}>Post</Link>

@@ -11,8 +11,8 @@ const Randomtitle = (props) => {
     <section className="text-gray-600 body-font">
       <div className="px-5 mx-auto flex flex-col">
         <div className="lg:w-4/6 mx-auto">
-          <div className="rounded-lg h-64 overflow-hidden relative">
-            <img alt="content" className="object-cover object-center h-full w-full" src={url} />
+          <div className="rounded-lg h-96 overflow-hidden relative">
+            <img alt="content" className="object-cover object-center h-full w-full " src={url} />
             <div className="absolute top-0 right-0 rounded-sm px-2 ">
               <WhatsappShareButton
                 url={`${process.env.NEXT_PUBLIC_PORT}/${title}`}
